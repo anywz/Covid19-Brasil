@@ -24,6 +24,7 @@ ___________
 * Looker Studio (Google Data Studio) para visualização
 
 ---
+📂 Organização do projeto
 
 * `Projeto Covid/src/main.py`        - Script principal com toda a lógica ETL
 * `.env.example`                     - Modelo para variáveis de ambiente (credenciais e paths)

@@ -21,18 +21,11 @@ Google Cloud Platform (BigQuery, IAM, API)
 Looker Studio (Google Data Studio) para visualização
 ---
 
-Projeto Covid/
-- src/
-     main.py           # Script principal com toda a lógica ETL
-  
-- .env.example          # Modelo para variáveis de ambiente (credenciais e paths)
-  
-- requirements.txt      # Bibliotecas necessárias para rodar o projeto
-  
-- .gitignore            # Arquivos ignorados pelo Git (ex: credenciais)
-  
-- README.md             # Documentação do projeto
-
+* `Projeto Covid/src/main.py`        - Script principal com toda a lógica ETL
+* `.env.example`                     - Modelo para variáveis de ambiente (credenciais e paths)
+* `requirements.txt`                 - Bibliotecas necessárias para rodar o projeto
+* `.gitignore`                       - Arquivos ignorados pelo Git (ex: credenciais)
+* `README.md`                        - Documentação do projeto
 ---
 
 🔁 Fluxo do Processo

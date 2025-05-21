@@ -20,7 +20,7 @@ Google Cloud Platform (BigQuery, IAM, API)
 
 Looker Studio (Google Data Studio) para visualização
 ---
-
+'''
 Projeto Covid/
 ├── src/
 │   └── main.py               # Script principal com toda a lógica ETL

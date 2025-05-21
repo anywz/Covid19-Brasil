@@ -38,6 +38,8 @@ Automatizar o processo de ETL (Extração, Transformação e Carga) de dados sob
 4. **Adição de coluna `data_carga`** para controle de versionamento.
 5. **Envio automático** dos dados para o BigQuery.
 6. **Atualização da tabela** no modo `WRITE_TRUNCATE` (sobrescreve os dados).
+7. **Criação de consultas SQL personalizadas para extrair vizualizações enxutas.
+8. **Criação do Dashboard no LookerStudio.
 
 ---
 
@@ -62,7 +64,6 @@ TABLE_ID = "nome-da-tabela"
 
 ## 🧠 Diferenciais Técnicos
 
-- Script modular, limpo e documentado.
 - Controle de schema no envio ao BigQuery.
 - Manipulação eficiente de arquivos `.csv.gz`.
 - Coluna `data_carga` adicionada para auditoria.

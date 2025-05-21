@@ -1,24 +1,21 @@
 # 🦠 Coleta e Envio de Dados COVID-19 para o Google BigQuery
 
 Este projeto automatiza a coleta diária dos dados oficiais da COVID-19 no Brasil, disponibilizados pelo Brasil.IO, e realiza o processamento e envio direto para uma tabela no Google BigQuery. Com isso, é possível construir dashboards dinâmicos e análises avançadas, por exemplo, no Looker Studio.
+___________
 
 🚀 Objetivo
 Criar um pipeline ETL confiável e automatizado para alimentar um banco de dados analítico, facilitando análises em larga escala e visualizações atualizadas sobre a evolução da pandemia.
 
+___________
 📦 Tecnologias Utilizadas
-Python 3.x
 
-Pandas
-
-Requests
-
-google-cloud-bigquery
-
-python-dotenv
-
-Google Cloud Platform (BigQuery, IAM, API)
-
-Looker Studio (Google Data Studio) para visualização
+*Python 3.x
+*Pandas
+*Requests
+*google-cloud-bigquery
+*python-dotenv
+*Google Cloud Platform (BigQuery, IAM, API)
+*Looker Studio (Google Data Studio) para visualização
 ---
 
 * `Projeto Covid/src/main.py`        - Script principal com toda a lógica ETL

@@ -79,9 +79,9 @@ TABLE_ID = "nome-da-tabela"
 ## 👨‍💻 Autor
 
 **Aniel Torres**  
-📧 aniel@example.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/seu-perfil)  
-🌐 [Portfólio](https://github.com/seu-usuario)
+📧 aniel.vidaltorres@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/anieltorres/)  
+🌐 [Portfólio]( https://github.com/anywz)
 
 ---
 

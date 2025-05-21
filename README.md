@@ -55,7 +55,7 @@ ___________
 
 - Gere uma conta de serviço e baixe a chave JSON no Google Cloud Console
 
--Atualize o arquivo .env com suas credenciais e caminhos locais
+- Atualize o arquivo .env com suas credenciais e caminhos locais
 
 - Instale as dependências: pip install -r requirements.txt
 

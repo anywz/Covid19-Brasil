@@ -1,67 +1,63 @@
 # 🦠 Coleta e Envio de Dados COVID-19 para o Google BigQuery
 
-Este projeto automatiza a coleta de dados da COVID-19 disponibilizados pelo [Brasil.IO](https://brasil.io/dataset/covid19/caso_full/) e realiza o envio dos dados tratados diretamente para uma tabela no Google BigQuery, facilitando a análise e visualização em dashboards como o Looker Studio.
+Este projeto automatiza a coleta diária dos dados oficiais da COVID-19 no Brasil, disponibilizados pelo Brasil.IO, e realiza o processamento e envio direto para uma tabela no Google BigQuery. Com isso, é possível construir dashboards dinâmicos e análises avançadas, por exemplo, no Looker Studio.
 
-## 🚀 Objetivo
+🚀 Objetivo
+Criar um pipeline ETL confiável e automatizado para alimentar um banco de dados analítico, facilitando análises em larga escala e visualizações atualizadas sobre a evolução da pandemia.
 
-Automatizar o processo de ETL (Extração, Transformação e Carga) de dados sobre a COVID-19 no Brasil para um banco de dados analítico, permitindo análises de larga escala com visualizações dinâmicas e atualizadas.
+📦 Tecnologias Utilizadas
+Python 3.x
+
+Pandas
+
+Requests
+
+google-cloud-bigquery
+
+python-dotenv
+
+Google Cloud Platform (BigQuery, IAM, API)
+
+Looker Studio (Google Data Studio) para visualização
+---
+
+Projeto Covid/
+├── src/
+│   └── main.py               # Script principal com toda a lógica ETL
+├── .env.example              # Modelo para variáveis de ambiente (credenciais e paths)
+├── requirements.txt          # Bibliotecas necessárias para rodar o projeto
+├── .gitignore                # Arquivos ignorados pelo Git (ex: credenciais)
+└── README.md                 # Documentação do projeto
+
 
 ---
 
-## 📦 Tecnologias Utilizadas
+🔁 Fluxo do Processo
+Download automático do dataset .csv.gz oficial do Brasil.IO
 
-- **Python 3.x**
-- **Pandas**
-- **Requests**
-- **Google Cloud BigQuery**
-- **Google Cloud SDK / API**
-- **Dashboards via Looker Studio (Google Data Studio)**
-- **Google Cloud IAM** (para controle de autenticação e permissões)
-- **BigQuery Web UI / SQL Standard**
+Descompactação e leitura eficiente com Pandas
 
----
+Salvamento local do CSV com data no nome para versionamento
 
-## 📁 Estrutura do Projeto
+Inclusão da coluna data_carga para controle de auditoria
 
-```
-📂 Covid19-Brasil/
-├── coleta_covid_bigquery.py     # Script principal com a lógica de ETL
-├── README.md                    # Documentação do projeto
-├── .gitignore                   # Ignora arquivos sensíveis (ex: chave JSON)
-```
+Envio programático para o BigQuery com schema definido
 
----
+Atualização da tabela usando WRITE_TRUNCATE para garantir dados frescos
 
-## 🔁 Etapas do Processo
-
-1. **Download automático** do dataset `.csv.gz` do Brasil.IO.
-2. **Descompactação e leitura** eficiente do arquivo com Pandas.
-3. **Salvamento local** do CSV tratado com nome contendo a data da coleta.
-4. **Adição de coluna `data_carga`** para controle de versionamento.
-5. **Envio automático** dos dados para o BigQuery.
-6. **Atualização da tabela** no modo `WRITE_TRUNCATE` (sobrescreve os dados).
-7. **Criação de consultas SQL personalizadas para extrair visualizações otimizadas.
-8. **Criação do dashboard no Looker Studio.
+Possibilidade de integrar com agendadores como cron (Linux) ou Task Scheduler (Windows)
 ---
 
 ## ⚙️ Configurações Necessárias
 
-1. **Credencial do Google Cloud**
-   - Gere sua chave JSON de conta de serviço no [Google Cloud Console](https://console.cloud.google.com/).
-   - Salve o caminho da chave na variável `CHAVE_GOOGLE`.
+- Gere uma conta de serviço e baixe a chave JSON no Google Cloud Console
 
-2. **Variáveis de configuração no script:**
+-Atualize o arquivo .env com suas credenciais e caminhos locais
 
-```python
-URL_DADOS = "https://data.brasil.io/dataset/covid19/caso_full.csv.gz"
-PASTA_SAIDA = "CAMINHO/LOCAL/PARA/SALVAR/ARQUIVO"
-CHAVE_GOOGLE = "CAMINHO/DA/CHAVE.JSON"
-PROJECT_ID = "seu-projeto-id"
-DATASET_ID = "nome-do-dataset"
-TABLE_ID = "nome-da-tabela"
-```
+- Instale as dependências: pip install -r requirements.txt
 
----
+- Execute o script principal: python src/main.py
+
 
 ## 🧠 Diferenciais Técnicos
 
@@ -72,7 +68,7 @@ TABLE_ID = "nome-da-tabela"
 
 ---
 
-## 📊 Dashboard (Looker Studio)
+## 📊 Dashboard criado com base nos dados (Looker Studio)
 
 > 🔗 https://lookerstudio.google.com/reporting/42e565b4-1d7d-4b01-8e3a-3a97bf0d244b
 

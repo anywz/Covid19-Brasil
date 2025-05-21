@@ -16,6 +16,8 @@ Automatizar o processo de ETL (Extração, Transformação e Carga) de dados sob
 - **Google Cloud BigQuery**
 - **Google Cloud SDK / API**
 - **Dashboards via Looker Studio (Google Data Studio)**
+- **Google Cloud IAM** (para controle de autenticação e permissões)
+- **BigQuery Web UI / SQL Standard**
 
 ---
 
@@ -38,9 +40,8 @@ Automatizar o processo de ETL (Extração, Transformação e Carga) de dados sob
 4. **Adição de coluna `data_carga`** para controle de versionamento.
 5. **Envio automático** dos dados para o BigQuery.
 6. **Atualização da tabela** no modo `WRITE_TRUNCATE` (sobrescreve os dados).
-7. **Criação de consultas SQL personalizadas para extrair vizualizações enxutas.
-8. **Criação do Dashboard no LookerStudio.
-
+7. **Criação de consultas SQL personalizadas para extrair visualizações otimizadas.
+8. **Criação do dashboard no Looker Studio.
 ---
 
 ## ⚙️ Configurações Necessárias

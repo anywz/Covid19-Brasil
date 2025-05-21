@@ -9,19 +9,19 @@ Criar um pipeline ETL confiável e automatizado para alimentar um banco de dados
 ___________
 📦 Tecnologias Utilizadas
 
-*Python 3.x
+* Python 3.x
 
-*Pandas
+* Pandas
 
-*Requests
+* Requests
 
-*google-cloud-bigquery
+* google-cloud-bigquery
 
-*python-dotenv
+* python-dotenv
 
-*Google Cloud Platform (BigQuery, IAM, API)
+* Google Cloud Platform (BigQuery, IAM, API)
 
-*Looker Studio (Google Data Studio) para visualização
+* Looker Studio (Google Data Studio) para visualização
 
 ---
 

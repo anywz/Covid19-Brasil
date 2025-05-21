@@ -26,18 +26,13 @@ ___________
 ---
 
 🔁 Fluxo do Processo
+
 Download automático do dataset .csv.gz oficial do Brasil.IO
-
 Descompactação e leitura eficiente com Pandas
-
 Salvamento local do CSV com data no nome para versionamento
-
 Inclusão da coluna data_carga para controle de auditoria
-
 Envio programático para o BigQuery com schema definido
-
 Atualização da tabela usando WRITE_TRUNCATE para garantir dados frescos
-
 Possibilidade de integrar com agendadores como cron (Linux) ou Task Scheduler (Windows)
 ---
 

@@ -3,11 +3,11 @@
 Este projeto automatiza a coleta diária dos dados oficiais da COVID-19 no Brasil, disponibilizados pelo Brasil.IO, e realiza o processamento e envio direto para uma tabela no Google BigQuery. Com isso, é possível construir dashboards dinâmicos e análises avançadas, por exemplo, no Looker Studio.
 ___________
 
-🚀 Objetivo
+## 🚀 Objetivo
 Criar um pipeline ETL confiável e automatizado para alimentar um banco de dados analítico, facilitando análises em larga escala e visualizações atualizadas sobre a evolução da pandemia.
 
 ___________
-📦 Tecnologias Utilizadas
+## 📦 Tecnologias Utilizadas
 
 * Python 3.x
 
@@ -24,7 +24,7 @@ ___________
 * Looker Studio (Google Data Studio) para visualização
 
 ---
-📂 Organização do projeto
+## 📂 Organização do projeto
 
 * `Projeto Covid/src/main.py`        - Script principal com toda a lógica ETL
 * `.env.example`                     - Modelo para variáveis de ambiente (credenciais e paths)
@@ -33,7 +33,7 @@ ___________
 * `README.md`                        - Documentação do projeto
 ---
 
-🔁 Fluxo do Processo
+## 🔁 Fluxo do Processo
 
 * Download automático do dataset .csv.gz oficial do Brasil.IO
 

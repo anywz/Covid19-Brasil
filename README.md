@@ -24,7 +24,7 @@ Automatizar o processo de ETL (Extração, Transformação e Carga) de dados sob
 ## 📁 Estrutura do Projeto
 
 ```
-📂 coleta_covid_bigquery/
+📂 Covid19-Brasil/
 ├── coleta_covid_bigquery.py     # Script principal com a lógica de ETL
 ├── README.md                    # Documentação do projeto
 ├── .gitignore                   # Ignora arquivos sensíveis (ex: chave JSON)
